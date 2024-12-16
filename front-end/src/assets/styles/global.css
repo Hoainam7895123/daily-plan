@@ -1,0 +1,10 @@
+body {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+textarea:focus {
+    outline: none;
+}

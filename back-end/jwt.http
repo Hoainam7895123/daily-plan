@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/todos/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvYWluYW10ZCIsImlhdCI6MTczNDMzMDg5MiwiZXhwIjoxNzM0MzMwOTUyfQ.95R9N61fKmeXbVetR7ElSuhlfBgM1gtv_N2BDAAXlIg
+
+###
+GET http://localhost:3000/api/users/get
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "hoainamtd",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvYWluYW10ZCIsImlhdCI6MTczNDI3MTcyMSwiZXhwIjoxNzM0MjcxNzUxfQ.3UVWBQw3LvuiAvdpbTyUk7bLFU68JsGf1YRg7lD615U
+
+
+###
+POST http://localhost:3000/api/auth/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvYWluYW10ZCIsImlhdCI6MTczNDMxODAzMSwiZXhwIjoxNzM0MzIxNjMxfQ.w1L9FD36RUg3qKsWuEPV3oJIR0vjKYk_Y9Zp62WaDNE"
+}
+
+###
+POST http://localhost:3000/api/auth/refresh-token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhvYWluYW10ZCIsImlhdCI6MTczNDMxODAzMSwiZXhwIjoxNzM0MzIxNjMxfQ.w1L9FD36RUg3qKsWuEPV3oJIR0vjKYk_Y9Zp62WaDNE"
+}
