@@ -25,7 +25,6 @@ app.use(express.json());
 
 app.use('/api', apiRoutes);
 
-// Lắng nghe trên cổng 3000
 app.listen(PORT, () => {
     console.log(`My is running at http://localhost:${PORT}`);
 });
